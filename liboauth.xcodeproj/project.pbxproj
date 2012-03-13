@@ -1,0 +1,235 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCDA3209150F400900338916 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3202150F400900338916 /* hash.c */; };
+		BCDA320A150F400900338916 /* oauth.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3203150F400900338916 /* oauth.c */; };
+		BCDA320B150F400900338916 /* oauth.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3204150F400900338916 /* oauth.h */; };
+		BCDA320C150F400900338916 /* oauth_http.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3205150F400900338916 /* oauth_http.c */; };
+		BCDA320D150F400900338916 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3206150F400900338916 /* sha1.c */; };
+		BCDA320E150F400900338916 /* xmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3207150F400900338916 /* xmalloc.c */; };
+		BCDA320F150F400900338916 /* xmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3208150F400900338916 /* xmalloc.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCDA31F1150F3DD300338916 /* liboauth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboauth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCDA3202150F400900338916 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
+		BCDA3203150F400900338916 /* oauth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oauth.c; sourceTree = "<group>"; };
+		BCDA3204150F400900338916 /* oauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oauth.h; sourceTree = "<group>"; };
+		BCDA3205150F400900338916 /* oauth_http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oauth_http.c; sourceTree = "<group>"; };
+		BCDA3206150F400900338916 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		BCDA3207150F400900338916 /* xmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xmalloc.c; sourceTree = "<group>"; };
+		BCDA3208150F400900338916 /* xmalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmalloc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCDA31EE150F3DD300338916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCDA31E1150F3D6900338916 = {
+			isa = PBXGroup;
+			children = (
+				BCDA3200150F400900338916 /* src */,
+				BCDA31F2150F3DD300338916 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCDA31F2150F3DD300338916 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCDA31F1150F3DD300338916 /* liboauth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCDA3200150F400900338916 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BCDA3202150F400900338916 /* hash.c */,
+				BCDA3203150F400900338916 /* oauth.c */,
+				BCDA3204150F400900338916 /* oauth.h */,
+				BCDA3205150F400900338916 /* oauth_http.c */,
+				BCDA3206150F400900338916 /* sha1.c */,
+				BCDA3207150F400900338916 /* xmalloc.c */,
+				BCDA3208150F400900338916 /* xmalloc.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BCDA31EF150F3DD300338916 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDA320B150F400900338916 /* oauth.h in Headers */,
+				BCDA320F150F400900338916 /* xmalloc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BCDA31F0150F3DD300338916 /* liboauth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCDA31FE150F3DD300338916 /* Build configuration list for PBXNativeTarget "liboauth" */;
+			buildPhases = (
+				BCDA31ED150F3DD300338916 /* Sources */,
+				BCDA31EE150F3DD300338916 /* Frameworks */,
+				BCDA31EF150F3DD300338916 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = liboauth;
+			productName = liboauth;
+			productReference = BCDA31F1150F3DD300338916 /* liboauth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCDA31E3150F3D6900338916 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = BCDA31E6150F3D6900338916 /* Build configuration list for PBXProject "liboauth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCDA31E1150F3D6900338916;
+			productRefGroup = BCDA31F2150F3DD300338916 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCDA31F0150F3DD300338916 /* liboauth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCDA31ED150F3DD300338916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDA3209150F400900338916 /* hash.c in Sources */,
+				BCDA320A150F400900338916 /* oauth.c in Sources */,
+				BCDA320C150F400900338916 /* oauth_http.c in Sources */,
+				BCDA320D150F400900338916 /* sha1.c in Sources */,
+				BCDA320E150F400900338916 /* xmalloc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BCDA31E8150F3D6A00338916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCDA31E9150F3D6A00338916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		BCDA31FC150F3DD300338916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/liboauth.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(OPENSSL_DIR)/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OPENSSL_DIR = "$(SRCROOT)/../openssl";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = oauth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCDA31FD150F3DD300338916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/liboauth.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(OPENSSL_DIR)/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OPENSSL_DIR = "$(SRCROOT)/../openssl";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = oauth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCDA31E6150F3D6900338916 /* Build configuration list for PBXProject "liboauth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDA31E8150F3D6A00338916 /* Debug */,
+				BCDA31E9150F3D6A00338916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCDA31FE150F3DD300338916 /* Build configuration list for PBXNativeTarget "liboauth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDA31FC150F3DD300338916 /* Debug */,
+				BCDA31FD150F3DD300338916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCDA31E3150F3D6900338916 /* Project object */;
+}
