@@ -37,7 +37,7 @@
 
 #include "commontest.h"
 
-int loglevel = 1; //< report each successful test
+int loglevel = 1; ///< report each successful test
 
 int main (int argc, char **argv) {
   int fail=0;

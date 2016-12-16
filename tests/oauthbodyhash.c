@@ -30,10 +30,10 @@
 #include <oauth.h>
 
 int my_data_post(char *url, char *data) {
-  const char *c_key         = "key"; //< consumer key
-  const char *c_secret      = "secret"; //< consumer secret
-  char *t_key               = "tkey"; //< access token key
-  char *t_secret            = "tsecret"; //< access token secret
+  const char *c_key         = "key"; ///< consumer key
+  const char *c_secret      = "secret"; ///< consumer secret
+  char *t_key               = "tkey"; ///< access token key
+  char *t_secret            = "tsecret"; ///< access token secret
 
   char *postarg = NULL;
   char *req_url = NULL;

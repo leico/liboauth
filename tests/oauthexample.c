@@ -61,11 +61,11 @@ int oauth_consumer_example(int use_post) {
   const char *request_token_uri = "http://term.ie/oauth/example/request_token.php";
   const char *access_token_uri = "http://term.ie/oauth/example/access_token.php";
   const char *test_call_uri = "http://term.ie/oauth/example/echo_api.php?method=foo%20bar&bar=baz";
-  const char *c_key         = "key"; //< consumer key
-  const char *c_secret      = "secret"; //< consumer secret
+  const char *c_key         = "key"; ///< consumer key
+  const char *c_secret      = "secret"; ///< consumer secret
 
-  char *t_key    = NULL; //< access token key
-  char *t_secret = NULL; //< access token secret
+  char *t_key    = NULL; ///< access token key
+  char *t_secret = NULL; ///< access token secret
 
   char *req_url = NULL;
   char *postarg = NULL;

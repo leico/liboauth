@@ -41,11 +41,11 @@ void request_token_example_get(void) {
   const char *req_c_secret      = "942295b08ffce77b399419ee96ac65be"; //< consumer secret
 #else
   const char *request_token_uri = "http://term.ie/oauth/example/request_token.php";
-  const char *req_c_key         = "key"; //< consumer key
-  const char *req_c_secret      = "secret"; //< consumer secret
+  const char *req_c_key         = "key"; ///< consumer key
+  const char *req_c_secret      = "secret"; ///< consumer secret
 #endif
-  char *res_t_key    = NULL; //< replied key
-  char *res_t_secret = NULL; //< replied secret
+  char *res_t_key    = NULL; ///< replied key
+  char *res_t_secret = NULL; ///< replied secret
 
   char *req_url = NULL;
   char *reply;
@@ -92,11 +92,11 @@ void request_token_example_post(void) {
   const char *req_c_secret      = "942295b08ffce77b399419ee96ac65be"; //< consumer secret
 #else
   const char *request_token_uri = "http://term.ie/oauth/example/request_token.php";
-  const char *req_c_key         = "key"; //< consumer key
-  const char *req_c_secret      = "secret"; //< consumer secret
+  const char *req_c_key         = "key"; ///< consumer key
+  const char *req_c_secret      = "secret"; ///< consumer secret
 #endif
-  char *res_t_key    = NULL; //< replied key
-  char *res_t_secret = NULL; //< replied secret
+  char *res_t_key    = NULL; ///< replied key
+  char *res_t_secret = NULL; ///< replied secret
 
   char *postarg = NULL;
   char *req_url;
@@ -146,15 +146,15 @@ int main (int argc, char **argv) {
   const char *url      = "http://base.url/&just=append?post=or_get_parameters"
                          "&arguments=will_be_formatted_automatically?&dont_care"
 			 "=about_separators";
-			 //< the url to sign
+			 ///< the url to sign
   const char *c_key    = "1234567890abcdef1234567890abcdef123456789";
-  			//< consumer key
+  			///< consumer key
   const char *c_secret = "01230123012301230123012301230123";
-  			//< consumer secret
+  			///< consumer secret
   const char *t_key    = "0987654321fedcba0987654321fedcba098765432";
-  			//< token key
+  			///< token key
   const char *t_secret = "66666666666666666666666666666666";
-  			//< token secret
+  			///< token secret
 
 #if 1 // example sign GET request and print the signed request URL
   {

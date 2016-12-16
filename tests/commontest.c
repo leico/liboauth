@@ -35,7 +35,7 @@
 
 #include "commontest.h"
 
-extern int loglevel; //< report each successful test
+extern int loglevel; ///< report each successful test
 
 /*
  * test parameter encoding

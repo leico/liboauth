@@ -369,11 +369,11 @@ int oauth_time_indepenent_equals(const char* a, const char* b) attribute_depreca
  */
 char *oauth_sign_url2 (const char *url, char **postargs, 
   OAuthMethod method, 
-  const char *http_method, //< HTTP request method
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *http_method, ///< HTTP request method
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   );
 
 /**
@@ -381,10 +381,10 @@ char *oauth_sign_url2 (const char *url, char **postargs,
  */
 char *oauth_sign_url (const char *url, char **postargs, 
   OAuthMethod method, 
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) attribute_deprecated;
 
 
@@ -428,11 +428,11 @@ char *oauth_sign_url (const char *url, char **postargs,
 void oauth_sign_array2_process (int *argcp, char***argvp,
   char **postargs,
   OAuthMethod method, 
-  const char *http_method, //< HTTP request method
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *http_method, ///< HTTP request method
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   );
 
 /**
@@ -466,11 +466,11 @@ void oauth_sign_array2_process (int *argcp, char***argvp,
 char *oauth_sign_array2 (int *argcp, char***argvp,
   char **postargs,
   OAuthMethod method, 
-  const char *http_method, //< HTTP request method
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *http_method, ///< HTTP request method
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   );
 
 /**
@@ -479,10 +479,10 @@ char *oauth_sign_array2 (int *argcp, char***argvp,
 char *oauth_sign_array (int *argcp, char***argvp,
   char **postargs,
   OAuthMethod method, 
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) attribute_deprecated;
 
 
@@ -535,8 +535,8 @@ char *oauth_body_hash_encode(size_t len, unsigned char *digest);
  */
 char *oauth_sign_xmpp (const char *xml,
   OAuthMethod method, 
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   );
 
 /**

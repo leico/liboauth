@@ -1,3 +1,5 @@
+
+
 int test_encoding(char *param, char *expected);
 #ifdef TEST_UNICODE
 int test_uniencoding(wchar_t *src, char *expected);

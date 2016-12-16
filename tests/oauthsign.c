@@ -15,13 +15,13 @@ static void usage (char *program_name) {
  */
 int main (int argc, char **argv) {
 
-  char *url;     //< the url to sign
-  char *c_key;    //< consumer key
-  char *c_secret;  //< consumer secret
-  char *t_key;    //< token key
-  char *t_secret ;  //< token secret
+  char *url;     ///< the url to sign
+  char *c_key;    ///< consumer key
+  char *c_secret;  ///< consumer secret
+  char *t_key;    ///< token key
+  char *t_secret ;  ///< token secret
 
-  int mode = 0;   //< mode: 0=GET 1=POST
+  int mode = 0;   ///< mode: 0=GET 1=POST
 
   // TODO: use getopt to parse parameters
 

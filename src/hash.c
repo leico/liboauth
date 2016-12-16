@@ -380,7 +380,7 @@ char *oauth_sign_hmac_sha1_raw (const char *m, const size_t ml, const char *k, c
 #include <openssl/evp.h>
 #include <openssl/x509.h>
 #include <openssl/x509v3.h>
-#include <openssl/ssl.h>
+#include <openssl/ssl3.h>
 
 char *oauth_sign_rsa_sha1 (const char *m, const char *k) {
   unsigned char *sig = NULL;

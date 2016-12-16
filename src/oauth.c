@@ -655,8 +655,8 @@ void oauth_add_param_to_array(int *argcp, char ***argvp, const char *addparam) {
  */
 void oauth_add_protocol(int *argcp, char ***argvp, 
   OAuthMethod method, 
-  const char *c_key, //< consumer key - posted plain text
-  const char *t_key //< token key - posted plain text in URL
+  const char *c_key, ///< consumer key - posted plain text
+  const char *t_key ///< token key - posted plain text in URL
  ){
   char oarg[1024];
 
@@ -701,10 +701,10 @@ void oauth_add_protocol(int *argcp, char ***argvp,
 
 char *oauth_sign_url (const char *url, char **postargs, 
   OAuthMethod method, 
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) {
   return oauth_sign_url2(url, postargs, 
     method, NULL,
@@ -714,11 +714,11 @@ char *oauth_sign_url (const char *url, char **postargs,
 
 char *oauth_sign_url2 (const char *url, char **postargs, 
   OAuthMethod method, 
-  const char *http_method, //< HTTP request method
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *http_method, ///< HTTP request method
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) {
   int  argc;
   char **argv = NULL;
@@ -740,10 +740,10 @@ char *oauth_sign_url2 (const char *url, char **postargs,
 char *oauth_sign_array (int *argcp, char***argvp,
   char **postargs,
   OAuthMethod method, 
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) {
   return oauth_sign_array2 (argcp, argvp, 
                             postargs, method,
@@ -755,11 +755,11 @@ char *oauth_sign_array (int *argcp, char***argvp,
 void oauth_sign_array2_process (int *argcp, char***argvp,
   char **postargs,
   OAuthMethod method, 
-  const char *http_method, //< HTTP request method
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *http_method, ///< HTTP request method
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) {
   char oarg[1024];
   char *query;
@@ -819,11 +819,11 @@ void oauth_sign_array2_process (int *argcp, char***argvp,
 char *oauth_sign_array2 (int *argcp, char***argvp,
   char **postargs,
   OAuthMethod method, 
-  const char *http_method, //< HTTP request method
-  const char *c_key, //< consumer key - posted plain text
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_key, //< token key - posted plain text in URL
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *http_method, ///< HTTP request method
+  const char *c_key, ///< consumer key - posted plain text
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_key, ///< token key - posted plain text in URL
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) {
 
   char *result;
@@ -911,8 +911,8 @@ int oauth_time_indepenent_equals(const char* a, const char* b) {
  */
 char *oauth_sign_xmpp (const char *xml,
   OAuthMethod method, 
-  const char *c_secret, //< consumer secret - used as 1st part of secret-key 
-  const char *t_secret //< token secret - used as 2st part of secret-key
+  const char *c_secret, ///< consumer secret - used as 1st part of secret-key 
+  const char *t_secret ///< token secret - used as 2st part of secret-key
   ) {
 
   return NULL;

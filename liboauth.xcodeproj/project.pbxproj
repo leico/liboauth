@@ -7,7 +7,215 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A1AB11B1E047DB400A7FC2D /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1AB11A1E047DB400A7FC2D /* libssl.a */; };
+		4AA00C321E048DE800DFBC1E /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3202150F400900338916 /* hash.c */; };
+		4AA00C331E048DE800DFBC1E /* oauth.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3203150F400900338916 /* oauth.c */; };
+		4AA00C341E048DE800DFBC1E /* oauth.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3204150F400900338916 /* oauth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AA00C351E048DE800DFBC1E /* oauth_http.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3205150F400900338916 /* oauth_http.c */; };
+		4AA00C361E048DE800DFBC1E /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3206150F400900338916 /* sha1.c */; };
+		4AA00C371E048DE800DFBC1E /* xmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3207150F400900338916 /* xmalloc.c */; };
+		4AA00C381E048DE800DFBC1E /* xmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3208150F400900338916 /* xmalloc.h */; };
+		4AA00CBB1E04995700DFBC1E /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C701E04995700DFBC1E /* aes.h */; };
+		4AA00CBC1E04995700DFBC1E /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C701E04995700DFBC1E /* aes.h */; };
+		4AA00CBD1E04995700DFBC1E /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C711E04995700DFBC1E /* asn1.h */; };
+		4AA00CBE1E04995700DFBC1E /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C711E04995700DFBC1E /* asn1.h */; };
+		4AA00CBF1E04995700DFBC1E /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C721E04995700DFBC1E /* asn1_mac.h */; };
+		4AA00CC01E04995700DFBC1E /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C721E04995700DFBC1E /* asn1_mac.h */; };
+		4AA00CC11E04995700DFBC1E /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C731E04995700DFBC1E /* asn1t.h */; };
+		4AA00CC21E04995700DFBC1E /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C731E04995700DFBC1E /* asn1t.h */; };
+		4AA00CC31E04995700DFBC1E /* async.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C741E04995700DFBC1E /* async.h */; };
+		4AA00CC41E04995700DFBC1E /* async.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C741E04995700DFBC1E /* async.h */; };
+		4AA00CC51E04995700DFBC1E /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C751E04995700DFBC1E /* bio.h */; };
+		4AA00CC61E04995700DFBC1E /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C751E04995700DFBC1E /* bio.h */; };
+		4AA00CC71E04995700DFBC1E /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C761E04995700DFBC1E /* blowfish.h */; };
+		4AA00CC81E04995700DFBC1E /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C761E04995700DFBC1E /* blowfish.h */; };
+		4AA00CC91E04995700DFBC1E /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C771E04995700DFBC1E /* bn.h */; };
+		4AA00CCA1E04995700DFBC1E /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C771E04995700DFBC1E /* bn.h */; };
+		4AA00CCB1E04995700DFBC1E /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C781E04995700DFBC1E /* buffer.h */; };
+		4AA00CCC1E04995700DFBC1E /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C781E04995700DFBC1E /* buffer.h */; };
+		4AA00CCD1E04995700DFBC1E /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C791E04995700DFBC1E /* camellia.h */; };
+		4AA00CCE1E04995700DFBC1E /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C791E04995700DFBC1E /* camellia.h */; };
+		4AA00CCF1E04995700DFBC1E /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7A1E04995700DFBC1E /* cast.h */; };
+		4AA00CD01E04995700DFBC1E /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7A1E04995700DFBC1E /* cast.h */; };
+		4AA00CD11E04995700DFBC1E /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7B1E04995700DFBC1E /* cmac.h */; };
+		4AA00CD21E04995700DFBC1E /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7B1E04995700DFBC1E /* cmac.h */; };
+		4AA00CD31E04995700DFBC1E /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7C1E04995700DFBC1E /* cms.h */; };
+		4AA00CD41E04995700DFBC1E /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7C1E04995700DFBC1E /* cms.h */; };
+		4AA00CD51E04995700DFBC1E /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7D1E04995700DFBC1E /* comp.h */; };
+		4AA00CD61E04995700DFBC1E /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7D1E04995700DFBC1E /* comp.h */; };
+		4AA00CD71E04995700DFBC1E /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7E1E04995700DFBC1E /* conf.h */; };
+		4AA00CD81E04995700DFBC1E /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7E1E04995700DFBC1E /* conf.h */; };
+		4AA00CD91E04995700DFBC1E /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7F1E04995700DFBC1E /* conf_api.h */; };
+		4AA00CDA1E04995700DFBC1E /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C7F1E04995700DFBC1E /* conf_api.h */; };
+		4AA00CDB1E04995800DFBC1E /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C801E04995700DFBC1E /* crypto.h */; };
+		4AA00CDC1E04995800DFBC1E /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C801E04995700DFBC1E /* crypto.h */; };
+		4AA00CDD1E04995800DFBC1E /* ct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C811E04995700DFBC1E /* ct.h */; };
+		4AA00CDE1E04995800DFBC1E /* ct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C811E04995700DFBC1E /* ct.h */; };
+		4AA00CDF1E04995800DFBC1E /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C821E04995700DFBC1E /* des.h */; };
+		4AA00CE01E04995800DFBC1E /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C821E04995700DFBC1E /* des.h */; };
+		4AA00CE11E04995800DFBC1E /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C831E04995700DFBC1E /* dh.h */; };
+		4AA00CE21E04995800DFBC1E /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C831E04995700DFBC1E /* dh.h */; };
+		4AA00CE31E04995800DFBC1E /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C841E04995700DFBC1E /* dsa.h */; };
+		4AA00CE41E04995800DFBC1E /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C841E04995700DFBC1E /* dsa.h */; };
+		4AA00CE51E04995800DFBC1E /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C851E04995700DFBC1E /* dtls1.h */; };
+		4AA00CE61E04995800DFBC1E /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C851E04995700DFBC1E /* dtls1.h */; };
+		4AA00CE71E04995800DFBC1E /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C861E04995700DFBC1E /* e_os2.h */; };
+		4AA00CE81E04995800DFBC1E /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C861E04995700DFBC1E /* e_os2.h */; };
+		4AA00CE91E04995800DFBC1E /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C871E04995700DFBC1E /* ebcdic.h */; };
+		4AA00CEA1E04995800DFBC1E /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C871E04995700DFBC1E /* ebcdic.h */; };
+		4AA00CEB1E04995800DFBC1E /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C881E04995700DFBC1E /* ec.h */; };
+		4AA00CEC1E04995800DFBC1E /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C881E04995700DFBC1E /* ec.h */; };
+		4AA00CED1E04995800DFBC1E /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C891E04995700DFBC1E /* ecdh.h */; };
+		4AA00CEE1E04995800DFBC1E /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C891E04995700DFBC1E /* ecdh.h */; };
+		4AA00CEF1E04995800DFBC1E /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8A1E04995700DFBC1E /* ecdsa.h */; };
+		4AA00CF01E04995800DFBC1E /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8A1E04995700DFBC1E /* ecdsa.h */; };
+		4AA00CF11E04995800DFBC1E /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8B1E04995700DFBC1E /* engine.h */; };
+		4AA00CF21E04995800DFBC1E /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8B1E04995700DFBC1E /* engine.h */; };
+		4AA00CF31E04995800DFBC1E /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8C1E04995700DFBC1E /* err.h */; };
+		4AA00CF41E04995800DFBC1E /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8C1E04995700DFBC1E /* err.h */; };
+		4AA00CF51E04995800DFBC1E /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8D1E04995700DFBC1E /* evp.h */; };
+		4AA00CF61E04995800DFBC1E /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8D1E04995700DFBC1E /* evp.h */; };
+		4AA00CF71E04995800DFBC1E /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8E1E04995700DFBC1E /* hmac.h */; };
+		4AA00CF81E04995800DFBC1E /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8E1E04995700DFBC1E /* hmac.h */; };
+		4AA00CF91E04995800DFBC1E /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8F1E04995700DFBC1E /* idea.h */; };
+		4AA00CFA1E04995800DFBC1E /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C8F1E04995700DFBC1E /* idea.h */; };
+		4AA00CFB1E04995800DFBC1E /* kdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C901E04995700DFBC1E /* kdf.h */; };
+		4AA00CFC1E04995800DFBC1E /* kdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C901E04995700DFBC1E /* kdf.h */; };
+		4AA00CFD1E04995800DFBC1E /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C911E04995700DFBC1E /* lhash.h */; };
+		4AA00CFE1E04995800DFBC1E /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C911E04995700DFBC1E /* lhash.h */; };
+		4AA00CFF1E04995800DFBC1E /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C921E04995700DFBC1E /* md2.h */; };
+		4AA00D001E04995800DFBC1E /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C921E04995700DFBC1E /* md2.h */; };
+		4AA00D011E04995800DFBC1E /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C931E04995700DFBC1E /* md4.h */; };
+		4AA00D021E04995800DFBC1E /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C931E04995700DFBC1E /* md4.h */; };
+		4AA00D031E04995800DFBC1E /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C941E04995700DFBC1E /* md5.h */; };
+		4AA00D041E04995800DFBC1E /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C941E04995700DFBC1E /* md5.h */; };
+		4AA00D051E04995800DFBC1E /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C951E04995700DFBC1E /* mdc2.h */; };
+		4AA00D061E04995800DFBC1E /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C951E04995700DFBC1E /* mdc2.h */; };
+		4AA00D071E04995800DFBC1E /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C961E04995700DFBC1E /* modes.h */; };
+		4AA00D081E04995800DFBC1E /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C961E04995700DFBC1E /* modes.h */; };
+		4AA00D091E04995800DFBC1E /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C971E04995700DFBC1E /* obj_mac.h */; };
+		4AA00D0A1E04995800DFBC1E /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C971E04995700DFBC1E /* obj_mac.h */; };
+		4AA00D0B1E04995800DFBC1E /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C981E04995700DFBC1E /* objects.h */; };
+		4AA00D0C1E04995800DFBC1E /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C981E04995700DFBC1E /* objects.h */; };
+		4AA00D0D1E04995800DFBC1E /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C991E04995700DFBC1E /* ocsp.h */; };
+		4AA00D0E1E04995800DFBC1E /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C991E04995700DFBC1E /* ocsp.h */; };
+		4AA00D0F1E04995800DFBC1E /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9A1E04995700DFBC1E /* opensslconf.h */; };
+		4AA00D101E04995800DFBC1E /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9A1E04995700DFBC1E /* opensslconf.h */; };
+		4AA00D111E04995800DFBC1E /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9B1E04995700DFBC1E /* opensslv.h */; };
+		4AA00D121E04995800DFBC1E /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9B1E04995700DFBC1E /* opensslv.h */; };
+		4AA00D131E04995800DFBC1E /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9C1E04995700DFBC1E /* ossl_typ.h */; };
+		4AA00D141E04995800DFBC1E /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9C1E04995700DFBC1E /* ossl_typ.h */; };
+		4AA00D151E04995800DFBC1E /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9D1E04995700DFBC1E /* pem.h */; };
+		4AA00D161E04995800DFBC1E /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9D1E04995700DFBC1E /* pem.h */; };
+		4AA00D171E04995800DFBC1E /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9E1E04995700DFBC1E /* pem2.h */; };
+		4AA00D181E04995800DFBC1E /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9E1E04995700DFBC1E /* pem2.h */; };
+		4AA00D191E04995800DFBC1E /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9F1E04995700DFBC1E /* pkcs12.h */; };
+		4AA00D1A1E04995800DFBC1E /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00C9F1E04995700DFBC1E /* pkcs12.h */; };
+		4AA00D1B1E04995800DFBC1E /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA01E04995700DFBC1E /* pkcs7.h */; };
+		4AA00D1C1E04995800DFBC1E /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA01E04995700DFBC1E /* pkcs7.h */; };
+		4AA00D1D1E04995800DFBC1E /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA11E04995700DFBC1E /* rand.h */; };
+		4AA00D1E1E04995800DFBC1E /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA11E04995700DFBC1E /* rand.h */; };
+		4AA00D1F1E04995800DFBC1E /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA21E04995700DFBC1E /* rc2.h */; };
+		4AA00D201E04995800DFBC1E /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA21E04995700DFBC1E /* rc2.h */; };
+		4AA00D211E04995800DFBC1E /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA31E04995700DFBC1E /* rc4.h */; };
+		4AA00D221E04995800DFBC1E /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA31E04995700DFBC1E /* rc4.h */; };
+		4AA00D231E04995800DFBC1E /* rc5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA41E04995700DFBC1E /* rc5.h */; };
+		4AA00D241E04995800DFBC1E /* rc5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA41E04995700DFBC1E /* rc5.h */; };
+		4AA00D251E04995800DFBC1E /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA51E04995700DFBC1E /* ripemd.h */; };
+		4AA00D261E04995800DFBC1E /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA51E04995700DFBC1E /* ripemd.h */; };
+		4AA00D271E04995800DFBC1E /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA61E04995700DFBC1E /* rsa.h */; };
+		4AA00D281E04995800DFBC1E /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA61E04995700DFBC1E /* rsa.h */; };
+		4AA00D291E04995800DFBC1E /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA71E04995700DFBC1E /* safestack.h */; };
+		4AA00D2A1E04995800DFBC1E /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA71E04995700DFBC1E /* safestack.h */; };
+		4AA00D2B1E04995800DFBC1E /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA81E04995700DFBC1E /* seed.h */; };
+		4AA00D2C1E04995800DFBC1E /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA81E04995700DFBC1E /* seed.h */; };
+		4AA00D2D1E04995800DFBC1E /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA91E04995700DFBC1E /* sha.h */; };
+		4AA00D2E1E04995800DFBC1E /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CA91E04995700DFBC1E /* sha.h */; };
+		4AA00D2F1E04995800DFBC1E /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAA1E04995700DFBC1E /* srp.h */; };
+		4AA00D301E04995800DFBC1E /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAA1E04995700DFBC1E /* srp.h */; };
+		4AA00D311E04995800DFBC1E /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAB1E04995700DFBC1E /* srtp.h */; };
+		4AA00D321E04995800DFBC1E /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAB1E04995700DFBC1E /* srtp.h */; };
+		4AA00D331E04995800DFBC1E /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAC1E04995700DFBC1E /* ssl.h */; };
+		4AA00D341E04995800DFBC1E /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAC1E04995700DFBC1E /* ssl.h */; };
+		4AA00D351E04995800DFBC1E /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAD1E04995700DFBC1E /* ssl2.h */; };
+		4AA00D361E04995800DFBC1E /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAD1E04995700DFBC1E /* ssl2.h */; };
+		4AA00D371E04995800DFBC1E /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAE1E04995700DFBC1E /* ssl3.h */; };
+		4AA00D381E04995800DFBC1E /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAE1E04995700DFBC1E /* ssl3.h */; };
+		4AA00D391E04995800DFBC1E /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAF1E04995700DFBC1E /* stack.h */; };
+		4AA00D3A1E04995800DFBC1E /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CAF1E04995700DFBC1E /* stack.h */; };
+		4AA00D3B1E04995800DFBC1E /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB01E04995700DFBC1E /* symhacks.h */; };
+		4AA00D3C1E04995800DFBC1E /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB01E04995700DFBC1E /* symhacks.h */; };
+		4AA00D3D1E04995800DFBC1E /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB11E04995700DFBC1E /* tls1.h */; };
+		4AA00D3E1E04995800DFBC1E /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB11E04995700DFBC1E /* tls1.h */; };
+		4AA00D3F1E04995800DFBC1E /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB21E04995700DFBC1E /* ts.h */; };
+		4AA00D401E04995800DFBC1E /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB21E04995700DFBC1E /* ts.h */; };
+		4AA00D411E04995800DFBC1E /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB31E04995700DFBC1E /* txt_db.h */; };
+		4AA00D421E04995800DFBC1E /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB31E04995700DFBC1E /* txt_db.h */; };
+		4AA00D431E04995800DFBC1E /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB41E04995700DFBC1E /* ui.h */; };
+		4AA00D441E04995800DFBC1E /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB41E04995700DFBC1E /* ui.h */; };
+		4AA00D451E04995800DFBC1E /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB51E04995700DFBC1E /* whrlpool.h */; };
+		4AA00D461E04995800DFBC1E /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB51E04995700DFBC1E /* whrlpool.h */; };
+		4AA00D471E04995800DFBC1E /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB61E04995700DFBC1E /* x509.h */; };
+		4AA00D481E04995800DFBC1E /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB61E04995700DFBC1E /* x509.h */; };
+		4AA00D491E04995800DFBC1E /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB71E04995700DFBC1E /* x509_vfy.h */; };
+		4AA00D4A1E04995800DFBC1E /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB71E04995700DFBC1E /* x509_vfy.h */; };
+		4AA00D4B1E04995800DFBC1E /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB81E04995700DFBC1E /* x509v3.h */; };
+		4AA00D4C1E04995800DFBC1E /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00CB81E04995700DFBC1E /* x509v3.h */; };
+		4AA00D4D1E04995800DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00D4E1E04995800DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00D511E049D4000DFBC1E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00D501E049D4000DFBC1E /* config.h */; };
+		4AA00D521E049D4000DFBC1E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA00D501E049D4000DFBC1E /* config.h */; };
+		4AA00D6D1E04A61100DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00D6E1E04A61100DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00D761E04A92A00DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00D771E04A93800DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00D841E04AB9E00DFBC1E /* selftest_wiki.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00C661E0495C200DFBC1E /* selftest_wiki.c */; };
+		4AA00D851E04ABA100DFBC1E /* commontest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00C441E04905B00DFBC1E /* commontest.c */; };
+		4AA00D861E04ABA400DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00D871E04ABA600DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00D881E04ABA900DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00D891E04ABC800DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00D951E04AC4A00DFBC1E /* commontest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00C441E04905B00DFBC1E /* commontest.c */; };
+		4AA00D961E04AC5700DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00D971E04AC5A00DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00D981E04AC5D00DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00D991E04AC6000DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00D9B1E04AC6F00DFBC1E /* selftest_eran.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00D9A1E04AC6F00DFBC1E /* selftest_eran.c */; };
+		4AA00DA91E04AD5900DFBC1E /* selftest_other.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00DA81E04AD5900DFBC1E /* selftest_other.c */; };
+		4AA00DAA1E04AD6700DFBC1E /* commontest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00C441E04905B00DFBC1E /* commontest.c */; };
+		4AA00DAB1E04AD8000DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00DAC1E04AD8500DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00DAD1E04AD8700DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00DAE1E04AD8A00DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00DB41E04AE0A00DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00DB51E04AE0A00DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00DB61E04AE0A00DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00DB71E04AE0A00DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00DBF1E04AF3000DFBC1E /* oauthtest.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00DBE1E04AF3000DFBC1E /* oauthtest.c */; };
+		4AA00DC41E04B06800DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00DC51E04B06800DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00DC61E04B06800DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00DC71E04B06800DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00DCF1E04B09C00DFBC1E /* oauthtest2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00DCE1E04B09C00DFBC1E /* oauthtest2.c */; };
+		4AA00DD41E04B11E00DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00DD51E04B11E00DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00DD61E04B11E00DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00DD71E04B11E00DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00DDE1E04B15000DFBC1E /* oauthbodyhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00DDD1E04B15000DFBC1E /* oauthbodyhash.c */; };
+		4AA00DE41E04B1A800DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00DE51E04B1A800DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00DE61E04B1A800DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00DE71E04B1A800DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00DEE1E04B1C100DFBC1E /* oauthdatapost.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00DED1E04B1C100DFBC1E /* oauthdatapost.c */; };
+		4AA00DF41E04B20800DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00DF51E04B20800DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00DF61E04B20800DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00DF71E04B20800DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00DFE1E04B21D00DFBC1E /* oauthexample.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00DFD1E04B21D00DFBC1E /* oauthexample.c */; };
+		4AA00E041E04B27100DFBC1E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D751E04A92A00DFBC1E /* libz.1.dylib */; };
+		4AA00E051E04B27100DFBC1E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00D6C1E04A61100DFBC1E /* libcrypto.a */; };
+		4AA00E061E04B27100DFBC1E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00CBA1E04995700DFBC1E /* libssl.a */; };
+		4AA00E071E04B27100DFBC1E /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */; };
+		4AA00E0E1E04B28400DFBC1E /* oauthsign.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AA00E0D1E04B28400DFBC1E /* oauthsign.c */; };
 		BCDA3209150F400900338916 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3202150F400900338916 /* hash.c */; };
 		BCDA320A150F400900338916 /* oauth.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDA3203150F400900338916 /* oauth.c */; };
 		BCDA320B150F400900338916 /* oauth.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3204150F400900338916 /* oauth.h */; };
@@ -17,8 +225,189 @@
 		BCDA320F150F400900338916 /* xmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3208150F400900338916 /* xmalloc.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4AA00D7B1E04AB8000DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00D8C1E04AC3100DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00D9F1E04AD4200DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00DB81E04AE0A00DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00DC81E04B06800DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00DD81E04B11E00DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00DE81E04B1A800DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00DF81E04B20800DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4AA00E081E04B27100DFBC1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4A1AB11A1E047DB400A7FC2D /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = OpenSSL1.1/lib/libssl.a; sourceTree = "<group>"; };
+		4AA00C2D1E048D7200DFBC1E /* libOAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00C441E04905B00DFBC1E /* commontest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = commontest.c; path = tests/commontest.c; sourceTree = SOURCE_ROOT; };
+		4AA00C451E04905B00DFBC1E /* commontest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commontest.h; path = tests/commontest.h; sourceTree = SOURCE_ROOT; };
+		4AA00C661E0495C200DFBC1E /* selftest_wiki.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = selftest_wiki.c; path = tests/selftest_wiki.c; sourceTree = SOURCE_ROOT; };
+		4AA00C701E04995700DFBC1E /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		4AA00C711E04995700DFBC1E /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		4AA00C721E04995700DFBC1E /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		4AA00C731E04995700DFBC1E /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		4AA00C741E04995700DFBC1E /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
+		4AA00C751E04995700DFBC1E /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		4AA00C761E04995700DFBC1E /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		4AA00C771E04995700DFBC1E /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		4AA00C781E04995700DFBC1E /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		4AA00C791E04995700DFBC1E /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		4AA00C7A1E04995700DFBC1E /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		4AA00C7B1E04995700DFBC1E /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		4AA00C7C1E04995700DFBC1E /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		4AA00C7D1E04995700DFBC1E /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		4AA00C7E1E04995700DFBC1E /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		4AA00C7F1E04995700DFBC1E /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		4AA00C801E04995700DFBC1E /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		4AA00C811E04995700DFBC1E /* ct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ct.h; sourceTree = "<group>"; };
+		4AA00C821E04995700DFBC1E /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		4AA00C831E04995700DFBC1E /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		4AA00C841E04995700DFBC1E /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		4AA00C851E04995700DFBC1E /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		4AA00C861E04995700DFBC1E /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		4AA00C871E04995700DFBC1E /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		4AA00C881E04995700DFBC1E /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		4AA00C891E04995700DFBC1E /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		4AA00C8A1E04995700DFBC1E /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		4AA00C8B1E04995700DFBC1E /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		4AA00C8C1E04995700DFBC1E /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		4AA00C8D1E04995700DFBC1E /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		4AA00C8E1E04995700DFBC1E /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		4AA00C8F1E04995700DFBC1E /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		4AA00C901E04995700DFBC1E /* kdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdf.h; sourceTree = "<group>"; };
+		4AA00C911E04995700DFBC1E /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		4AA00C921E04995700DFBC1E /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md2.h; sourceTree = "<group>"; };
+		4AA00C931E04995700DFBC1E /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		4AA00C941E04995700DFBC1E /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		4AA00C951E04995700DFBC1E /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		4AA00C961E04995700DFBC1E /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		4AA00C971E04995700DFBC1E /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		4AA00C981E04995700DFBC1E /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		4AA00C991E04995700DFBC1E /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		4AA00C9A1E04995700DFBC1E /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		4AA00C9B1E04995700DFBC1E /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		4AA00C9C1E04995700DFBC1E /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		4AA00C9D1E04995700DFBC1E /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		4AA00C9E1E04995700DFBC1E /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		4AA00C9F1E04995700DFBC1E /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		4AA00CA01E04995700DFBC1E /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		4AA00CA11E04995700DFBC1E /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		4AA00CA21E04995700DFBC1E /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		4AA00CA31E04995700DFBC1E /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		4AA00CA41E04995700DFBC1E /* rc5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc5.h; sourceTree = "<group>"; };
+		4AA00CA51E04995700DFBC1E /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		4AA00CA61E04995700DFBC1E /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		4AA00CA71E04995700DFBC1E /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		4AA00CA81E04995700DFBC1E /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		4AA00CA91E04995700DFBC1E /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		4AA00CAA1E04995700DFBC1E /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		4AA00CAB1E04995700DFBC1E /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		4AA00CAC1E04995700DFBC1E /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		4AA00CAD1E04995700DFBC1E /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		4AA00CAE1E04995700DFBC1E /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		4AA00CAF1E04995700DFBC1E /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		4AA00CB01E04995700DFBC1E /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		4AA00CB11E04995700DFBC1E /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		4AA00CB21E04995700DFBC1E /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		4AA00CB31E04995700DFBC1E /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		4AA00CB41E04995700DFBC1E /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		4AA00CB51E04995700DFBC1E /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		4AA00CB61E04995700DFBC1E /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		4AA00CB71E04995700DFBC1E /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		4AA00CB81E04995700DFBC1E /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		4AA00CBA1E04995700DFBC1E /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		4AA00D501E049D4000DFBC1E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		4AA00D6C1E04A61100DFBC1E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		4AA00D751E04A92A00DFBC1E /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		4AA00D7D1E04AB8000DFBC1E /* selftest_wiki */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = selftest_wiki; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00D8E1E04AC3100DFBC1E /* selftest_eran */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = selftest_eran; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00D9A1E04AC6F00DFBC1E /* selftest_eran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = selftest_eran.c; path = tests/selftest_eran.c; sourceTree = SOURCE_ROOT; };
+		4AA00DA11E04AD4200DFBC1E /* selftest_other */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = selftest_other; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00DA81E04AD5900DFBC1E /* selftest_other.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = selftest_other.c; path = tests/selftest_other.c; sourceTree = SOURCE_ROOT; };
+		4AA00DBC1E04AE0A00DFBC1E /* oauth_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oauth_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00DBE1E04AF3000DFBC1E /* oauthtest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = oauthtest.c; path = tests/oauthtest.c; sourceTree = "<group>"; };
+		4AA00DCC1E04B06800DFBC1E /* oauth_test2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oauth_test2; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00DCE1E04B09C00DFBC1E /* oauthtest2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = oauthtest2.c; path = tests/oauthtest2.c; sourceTree = "<group>"; };
+		4AA00DDC1E04B11E00DFBC1E /* oauth_bodyhash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oauth_bodyhash; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00DDD1E04B15000DFBC1E /* oauthbodyhash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oauthbodyhash.c; path = tests/oauthbodyhash.c; sourceTree = "<group>"; };
+		4AA00DEC1E04B1A800DFBC1E /* oauth_datapost */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oauth_datapost; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00DED1E04B1C100DFBC1E /* oauthdatapost.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oauthdatapost.c; path = tests/oauthdatapost.c; sourceTree = "<group>"; };
+		4AA00DFC1E04B20800DFBC1E /* oauth_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oauth_example; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00DFD1E04B21D00DFBC1E /* oauthexample.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oauthexample.c; path = tests/oauthexample.c; sourceTree = "<group>"; };
+		4AA00E0C1E04B27100DFBC1E /* oauth_sign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oauth_sign; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA00E0D1E04B28400DFBC1E /* oauthsign.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oauthsign.c; path = tests/oauthsign.c; sourceTree = "<group>"; };
 		BCDA31F1150F3DD300338916 /* liboauth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboauth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDA3202150F400900338916 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
 		BCDA3203150F400900338916 /* oauth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oauth.c; sourceTree = "<group>"; };
@@ -30,11 +419,122 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4AA00C2A1E048D7200DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00D6E1E04A61100DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00D4E1E04995800DFBC1E /* libssl.a in Frameworks */,
+				4AA00D761E04A92A00DFBC1E /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00D7A1E04AB8000DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00D861E04ABA400DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00D891E04ABC800DFBC1E /* libOAuth.a in Frameworks */,
+				4AA00D871E04ABA600DFBC1E /* libssl.a in Frameworks */,
+				4AA00D881E04ABA900DFBC1E /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00D8B1E04AC3100DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00D961E04AC5700DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00D991E04AC6000DFBC1E /* libOAuth.a in Frameworks */,
+				4AA00D971E04AC5A00DFBC1E /* libssl.a in Frameworks */,
+				4AA00D981E04AC5D00DFBC1E /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00D9E1E04AD4200DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DAB1E04AD8000DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00DAC1E04AD8500DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00DAD1E04AD8700DFBC1E /* libssl.a in Frameworks */,
+				4AA00DAE1E04AD8A00DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DB31E04AE0A00DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DB41E04AE0A00DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00DB51E04AE0A00DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00DB61E04AE0A00DFBC1E /* libssl.a in Frameworks */,
+				4AA00DB71E04AE0A00DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DC31E04B06800DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DC41E04B06800DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00DC51E04B06800DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00DC61E04B06800DFBC1E /* libssl.a in Frameworks */,
+				4AA00DC71E04B06800DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DD31E04B11E00DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DD41E04B11E00DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00DD51E04B11E00DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00DD61E04B11E00DFBC1E /* libssl.a in Frameworks */,
+				4AA00DD71E04B11E00DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DE31E04B1A800DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DE41E04B1A800DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00DE51E04B1A800DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00DE61E04B1A800DFBC1E /* libssl.a in Frameworks */,
+				4AA00DE71E04B1A800DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DF31E04B20800DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DF41E04B20800DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00DF51E04B20800DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00DF61E04B20800DFBC1E /* libssl.a in Frameworks */,
+				4AA00DF71E04B20800DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00E031E04B27100DFBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00E041E04B27100DFBC1E /* libz.1.dylib in Frameworks */,
+				4AA00E051E04B27100DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00E061E04B27100DFBC1E /* libssl.a in Frameworks */,
+				4AA00E071E04B27100DFBC1E /* libOAuth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDA31EE150F3DD300338916 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A1AB11B1E047DB400A7FC2D /* libssl.a in Frameworks */,
+				4AA00D6D1E04A61100DFBC1E /* libcrypto.a in Frameworks */,
+				4AA00D4D1E04995800DFBC1E /* libssl.a in Frameworks */,
+				4AA00D771E04A93800DFBC1E /* libz.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,31 +544,240 @@
 		4A1AB10F1E04737700A7FC2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A1AB11A1E047DB400A7FC2D /* libssl.a */,
+				4AA00D751E04A92A00DFBC1E /* libz.1.dylib */,
+				4AA00C6D1E04995700DFBC1E /* OpenSSL1.1 */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AA00C6D1E04995700DFBC1E /* OpenSSL1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00C6E1E04995700DFBC1E /* include */,
+				4AA00CB91E04995700DFBC1E /* lib */,
+			);
+			path = OpenSSL1.1;
+			sourceTree = "<group>";
+		};
+		4AA00C6E1E04995700DFBC1E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00C6F1E04995700DFBC1E /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4AA00C6F1E04995700DFBC1E /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00C701E04995700DFBC1E /* aes.h */,
+				4AA00C711E04995700DFBC1E /* asn1.h */,
+				4AA00C721E04995700DFBC1E /* asn1_mac.h */,
+				4AA00C731E04995700DFBC1E /* asn1t.h */,
+				4AA00C741E04995700DFBC1E /* async.h */,
+				4AA00C751E04995700DFBC1E /* bio.h */,
+				4AA00C761E04995700DFBC1E /* blowfish.h */,
+				4AA00C771E04995700DFBC1E /* bn.h */,
+				4AA00C781E04995700DFBC1E /* buffer.h */,
+				4AA00C791E04995700DFBC1E /* camellia.h */,
+				4AA00C7A1E04995700DFBC1E /* cast.h */,
+				4AA00C7B1E04995700DFBC1E /* cmac.h */,
+				4AA00C7C1E04995700DFBC1E /* cms.h */,
+				4AA00C7D1E04995700DFBC1E /* comp.h */,
+				4AA00C7E1E04995700DFBC1E /* conf.h */,
+				4AA00C7F1E04995700DFBC1E /* conf_api.h */,
+				4AA00C801E04995700DFBC1E /* crypto.h */,
+				4AA00C811E04995700DFBC1E /* ct.h */,
+				4AA00C821E04995700DFBC1E /* des.h */,
+				4AA00C831E04995700DFBC1E /* dh.h */,
+				4AA00C841E04995700DFBC1E /* dsa.h */,
+				4AA00C851E04995700DFBC1E /* dtls1.h */,
+				4AA00C861E04995700DFBC1E /* e_os2.h */,
+				4AA00C871E04995700DFBC1E /* ebcdic.h */,
+				4AA00C881E04995700DFBC1E /* ec.h */,
+				4AA00C891E04995700DFBC1E /* ecdh.h */,
+				4AA00C8A1E04995700DFBC1E /* ecdsa.h */,
+				4AA00C8B1E04995700DFBC1E /* engine.h */,
+				4AA00C8C1E04995700DFBC1E /* err.h */,
+				4AA00C8D1E04995700DFBC1E /* evp.h */,
+				4AA00C8E1E04995700DFBC1E /* hmac.h */,
+				4AA00C8F1E04995700DFBC1E /* idea.h */,
+				4AA00C901E04995700DFBC1E /* kdf.h */,
+				4AA00C911E04995700DFBC1E /* lhash.h */,
+				4AA00C921E04995700DFBC1E /* md2.h */,
+				4AA00C931E04995700DFBC1E /* md4.h */,
+				4AA00C941E04995700DFBC1E /* md5.h */,
+				4AA00C951E04995700DFBC1E /* mdc2.h */,
+				4AA00C961E04995700DFBC1E /* modes.h */,
+				4AA00C971E04995700DFBC1E /* obj_mac.h */,
+				4AA00C981E04995700DFBC1E /* objects.h */,
+				4AA00C991E04995700DFBC1E /* ocsp.h */,
+				4AA00C9A1E04995700DFBC1E /* opensslconf.h */,
+				4AA00C9B1E04995700DFBC1E /* opensslv.h */,
+				4AA00C9C1E04995700DFBC1E /* ossl_typ.h */,
+				4AA00C9D1E04995700DFBC1E /* pem.h */,
+				4AA00C9E1E04995700DFBC1E /* pem2.h */,
+				4AA00C9F1E04995700DFBC1E /* pkcs12.h */,
+				4AA00CA01E04995700DFBC1E /* pkcs7.h */,
+				4AA00CA11E04995700DFBC1E /* rand.h */,
+				4AA00CA21E04995700DFBC1E /* rc2.h */,
+				4AA00CA31E04995700DFBC1E /* rc4.h */,
+				4AA00CA41E04995700DFBC1E /* rc5.h */,
+				4AA00CA51E04995700DFBC1E /* ripemd.h */,
+				4AA00CA61E04995700DFBC1E /* rsa.h */,
+				4AA00CA71E04995700DFBC1E /* safestack.h */,
+				4AA00CA81E04995700DFBC1E /* seed.h */,
+				4AA00CA91E04995700DFBC1E /* sha.h */,
+				4AA00CAA1E04995700DFBC1E /* srp.h */,
+				4AA00CAB1E04995700DFBC1E /* srtp.h */,
+				4AA00CAC1E04995700DFBC1E /* ssl.h */,
+				4AA00CAD1E04995700DFBC1E /* ssl2.h */,
+				4AA00CAE1E04995700DFBC1E /* ssl3.h */,
+				4AA00CAF1E04995700DFBC1E /* stack.h */,
+				4AA00CB01E04995700DFBC1E /* symhacks.h */,
+				4AA00CB11E04995700DFBC1E /* tls1.h */,
+				4AA00CB21E04995700DFBC1E /* ts.h */,
+				4AA00CB31E04995700DFBC1E /* txt_db.h */,
+				4AA00CB41E04995700DFBC1E /* ui.h */,
+				4AA00CB51E04995700DFBC1E /* whrlpool.h */,
+				4AA00CB61E04995700DFBC1E /* x509.h */,
+				4AA00CB71E04995700DFBC1E /* x509_vfy.h */,
+				4AA00CB81E04995700DFBC1E /* x509v3.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		4AA00CB91E04995700DFBC1E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00D6C1E04A61100DFBC1E /* libcrypto.a */,
+				4AA00CBA1E04995700DFBC1E /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4AA00D581E049F1E00DFBC1E /* selftest_wiki */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00D7D1E04AB8000DFBC1E /* selftest_wiki */,
+				4AA00C661E0495C200DFBC1E /* selftest_wiki.c */,
+			);
+			path = selftest_wiki;
+			sourceTree = "<group>";
+		};
+		4AA00D8F1E04AC3100DFBC1E /* selftest_eran */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00D9A1E04AC6F00DFBC1E /* selftest_eran.c */,
+				4AA00D8E1E04AC3100DFBC1E /* selftest_eran */,
+			);
+			path = selftest_eran;
+			sourceTree = "<group>";
+		};
+		4AA00D9C1E04ACF200DFBC1E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00E0F1E04B28800DFBC1E /* oauth_sign */,
+				4AA00DFF1E04B22100DFBC1E /* oauth_example */,
+				4AA00DEF1E04B1C500DFBC1E /* oauth_datapost */,
+				4AA00DDF1E04B16A00DFBC1E /* oauth_bodyhash */,
+				4AA00DCD1E04B08C00DFBC1E /* oauth_test2 */,
+				4AA00DBD1E04AF1D00DFBC1E /* oauth_test */,
+				4AA00C441E04905B00DFBC1E /* commontest.c */,
+				4AA00C451E04905B00DFBC1E /* commontest.h */,
+				4AA00DA21E04AD4200DFBC1E /* selftest_other */,
+				4AA00D8F1E04AC3100DFBC1E /* selftest_eran */,
+				4AA00D581E049F1E00DFBC1E /* selftest_wiki */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		4AA00DA21E04AD4200DFBC1E /* selftest_other */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00DA11E04AD4200DFBC1E /* selftest_other */,
+				4AA00DA81E04AD5900DFBC1E /* selftest_other.c */,
+			);
+			path = selftest_other;
+			sourceTree = "<group>";
+		};
+		4AA00DBD1E04AF1D00DFBC1E /* oauth_test */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00DBE1E04AF3000DFBC1E /* oauthtest.c */,
+				4AA00DBC1E04AE0A00DFBC1E /* oauth_test */,
+			);
+			name = oauth_test;
+			sourceTree = "<group>";
+		};
+		4AA00DCD1E04B08C00DFBC1E /* oauth_test2 */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00DCE1E04B09C00DFBC1E /* oauthtest2.c */,
+				4AA00DCC1E04B06800DFBC1E /* oauth_test2 */,
+			);
+			name = oauth_test2;
+			sourceTree = "<group>";
+		};
+		4AA00DDF1E04B16A00DFBC1E /* oauth_bodyhash */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00DDC1E04B11E00DFBC1E /* oauth_bodyhash */,
+				4AA00DDD1E04B15000DFBC1E /* oauthbodyhash.c */,
+			);
+			name = oauth_bodyhash;
+			sourceTree = "<group>";
+		};
+		4AA00DEF1E04B1C500DFBC1E /* oauth_datapost */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00DED1E04B1C100DFBC1E /* oauthdatapost.c */,
+				4AA00DEC1E04B1A800DFBC1E /* oauth_datapost */,
+			);
+			name = oauth_datapost;
+			sourceTree = "<group>";
+		};
+		4AA00DFF1E04B22100DFBC1E /* oauth_example */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00DFD1E04B21D00DFBC1E /* oauthexample.c */,
+				4AA00DFC1E04B20800DFBC1E /* oauth_example */,
+			);
+			name = oauth_example;
+			sourceTree = "<group>";
+		};
+		4AA00E0F1E04B28800DFBC1E /* oauth_sign */ = {
+			isa = PBXGroup;
+			children = (
+				4AA00E0D1E04B28400DFBC1E /* oauthsign.c */,
+				4AA00E0C1E04B27100DFBC1E /* oauth_sign */,
+			);
+			name = oauth_sign;
 			sourceTree = "<group>";
 		};
 		BCDA31E1150F3D6900338916 = {
 			isa = PBXGroup;
 			children = (
 				BCDA3200150F400900338916 /* src */,
-				BCDA31F2150F3DD300338916 /* Products */,
+				BCDA31F2150F3DD300338916 /* Create Libraries */,
+				4AA00D9C1E04ACF200DFBC1E /* Tests */,
 				4A1AB10F1E04737700A7FC2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		BCDA31F2150F3DD300338916 /* Products */ = {
+		BCDA31F2150F3DD300338916 /* Create Libraries */ = {
 			isa = PBXGroup;
 			children = (
 				BCDA31F1150F3DD300338916 /* liboauth.a */,
+				4AA00C2D1E048D7200DFBC1E /* libOAuth.a */,
 			);
-			name = Products;
+			name = "Create Libraries";
 			sourceTree = "<group>";
 		};
 		BCDA3200150F400900338916 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4AA00D501E049D4000DFBC1E /* config.h */,
 				BCDA3202150F400900338916 /* hash.c */,
 				BCDA3203150F400900338916 /* oauth.c */,
 				BCDA3204150F400900338916 /* oauth.h */,
@@ -83,18 +792,345 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4AA00C2B1E048D7200DFBC1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00D381E04995800DFBC1E /* ssl3.h in Headers */,
+				4AA00CD01E04995700DFBC1E /* cast.h in Headers */,
+				4AA00CCA1E04995700DFBC1E /* bn.h in Headers */,
+				4AA00D3A1E04995800DFBC1E /* stack.h in Headers */,
+				4AA00CEA1E04995800DFBC1E /* ebcdic.h in Headers */,
+				4AA00D481E04995800DFBC1E /* x509.h in Headers */,
+				4AA00D2E1E04995800DFBC1E /* sha.h in Headers */,
+				4AA00D041E04995800DFBC1E /* md5.h in Headers */,
+				4AA00D441E04995800DFBC1E /* ui.h in Headers */,
+				4AA00CD81E04995700DFBC1E /* conf.h in Headers */,
+				4AA00D0E1E04995800DFBC1E /* ocsp.h in Headers */,
+				4AA00D1C1E04995800DFBC1E /* pkcs7.h in Headers */,
+				4AA00CD21E04995700DFBC1E /* cmac.h in Headers */,
+				4AA00CE81E04995800DFBC1E /* e_os2.h in Headers */,
+				4AA00CF61E04995800DFBC1E /* evp.h in Headers */,
+				4AA00CE41E04995800DFBC1E /* dsa.h in Headers */,
+				4AA00CC21E04995700DFBC1E /* asn1t.h in Headers */,
+				4AA00D221E04995800DFBC1E /* rc4.h in Headers */,
+				4AA00D3E1E04995800DFBC1E /* tls1.h in Headers */,
+				4AA00D061E04995800DFBC1E /* mdc2.h in Headers */,
+				4AA00D1E1E04995800DFBC1E /* rand.h in Headers */,
+				4AA00D281E04995800DFBC1E /* rsa.h in Headers */,
+				4AA00D121E04995800DFBC1E /* opensslv.h in Headers */,
+				4AA00CFA1E04995800DFBC1E /* idea.h in Headers */,
+				4AA00D521E049D4000DFBC1E /* config.h in Headers */,
+				4AA00D0C1E04995800DFBC1E /* objects.h in Headers */,
+				4AA00CEE1E04995800DFBC1E /* ecdh.h in Headers */,
+				4AA00CF01E04995800DFBC1E /* ecdsa.h in Headers */,
+				4AA00CBC1E04995700DFBC1E /* aes.h in Headers */,
+				4AA00D101E04995800DFBC1E /* opensslconf.h in Headers */,
+				4AA00D241E04995800DFBC1E /* rc5.h in Headers */,
+				4AA00D261E04995800DFBC1E /* ripemd.h in Headers */,
+				4AA00D421E04995800DFBC1E /* txt_db.h in Headers */,
+				4AA00C341E048DE800DFBC1E /* oauth.h in Headers */,
+				4AA00CEC1E04995800DFBC1E /* ec.h in Headers */,
+				4AA00CD41E04995700DFBC1E /* cms.h in Headers */,
+				4AA00C381E048DE800DFBC1E /* xmalloc.h in Headers */,
+				4AA00CDE1E04995800DFBC1E /* ct.h in Headers */,
+				4AA00CDA1E04995700DFBC1E /* conf_api.h in Headers */,
+				4AA00D361E04995800DFBC1E /* ssl2.h in Headers */,
+				4AA00D401E04995800DFBC1E /* ts.h in Headers */,
+				4AA00CC81E04995700DFBC1E /* blowfish.h in Headers */,
+				4AA00D321E04995800DFBC1E /* srtp.h in Headers */,
+				4AA00CF21E04995800DFBC1E /* engine.h in Headers */,
+				4AA00CFE1E04995800DFBC1E /* lhash.h in Headers */,
+				4AA00CF41E04995800DFBC1E /* err.h in Headers */,
+				4AA00CBE1E04995700DFBC1E /* asn1.h in Headers */,
+				4AA00D021E04995800DFBC1E /* md4.h in Headers */,
+				4AA00CF81E04995800DFBC1E /* hmac.h in Headers */,
+				4AA00D461E04995800DFBC1E /* whrlpool.h in Headers */,
+				4AA00CCC1E04995700DFBC1E /* buffer.h in Headers */,
+				4AA00CD61E04995700DFBC1E /* comp.h in Headers */,
+				4AA00CE01E04995800DFBC1E /* des.h in Headers */,
+				4AA00D141E04995800DFBC1E /* ossl_typ.h in Headers */,
+				4AA00D001E04995800DFBC1E /* md2.h in Headers */,
+				4AA00CE21E04995800DFBC1E /* dh.h in Headers */,
+				4AA00D301E04995800DFBC1E /* srp.h in Headers */,
+				4AA00D181E04995800DFBC1E /* pem2.h in Headers */,
+				4AA00D081E04995800DFBC1E /* modes.h in Headers */,
+				4AA00D201E04995800DFBC1E /* rc2.h in Headers */,
+				4AA00CCE1E04995700DFBC1E /* camellia.h in Headers */,
+				4AA00D2A1E04995800DFBC1E /* safestack.h in Headers */,
+				4AA00D4C1E04995800DFBC1E /* x509v3.h in Headers */,
+				4AA00D2C1E04995800DFBC1E /* seed.h in Headers */,
+				4AA00CDC1E04995800DFBC1E /* crypto.h in Headers */,
+				4AA00CC61E04995700DFBC1E /* bio.h in Headers */,
+				4AA00D4A1E04995800DFBC1E /* x509_vfy.h in Headers */,
+				4AA00CE61E04995800DFBC1E /* dtls1.h in Headers */,
+				4AA00D1A1E04995800DFBC1E /* pkcs12.h in Headers */,
+				4AA00CC01E04995700DFBC1E /* asn1_mac.h in Headers */,
+				4AA00D3C1E04995800DFBC1E /* symhacks.h in Headers */,
+				4AA00CFC1E04995800DFBC1E /* kdf.h in Headers */,
+				4AA00D161E04995800DFBC1E /* pem.h in Headers */,
+				4AA00D341E04995800DFBC1E /* ssl.h in Headers */,
+				4AA00D0A1E04995800DFBC1E /* obj_mac.h in Headers */,
+				4AA00CC41E04995700DFBC1E /* async.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDA31EF150F3DD300338916 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA00D371E04995800DFBC1E /* ssl3.h in Headers */,
+				4AA00CCF1E04995700DFBC1E /* cast.h in Headers */,
+				4AA00CC91E04995700DFBC1E /* bn.h in Headers */,
+				4AA00D391E04995800DFBC1E /* stack.h in Headers */,
+				4AA00CE91E04995800DFBC1E /* ebcdic.h in Headers */,
+				4AA00D471E04995800DFBC1E /* x509.h in Headers */,
+				4AA00D2D1E04995800DFBC1E /* sha.h in Headers */,
+				4AA00D031E04995800DFBC1E /* md5.h in Headers */,
+				4AA00D431E04995800DFBC1E /* ui.h in Headers */,
+				4AA00CD71E04995700DFBC1E /* conf.h in Headers */,
+				4AA00D0D1E04995800DFBC1E /* ocsp.h in Headers */,
+				4AA00D1B1E04995800DFBC1E /* pkcs7.h in Headers */,
+				4AA00CD11E04995700DFBC1E /* cmac.h in Headers */,
+				4AA00CE71E04995800DFBC1E /* e_os2.h in Headers */,
+				4AA00CF51E04995800DFBC1E /* evp.h in Headers */,
+				4AA00CE31E04995800DFBC1E /* dsa.h in Headers */,
+				4AA00CC11E04995700DFBC1E /* asn1t.h in Headers */,
+				4AA00D211E04995800DFBC1E /* rc4.h in Headers */,
+				4AA00D3D1E04995800DFBC1E /* tls1.h in Headers */,
+				4AA00D051E04995800DFBC1E /* mdc2.h in Headers */,
+				4AA00D1D1E04995800DFBC1E /* rand.h in Headers */,
+				4AA00D271E04995800DFBC1E /* rsa.h in Headers */,
+				4AA00D111E04995800DFBC1E /* opensslv.h in Headers */,
+				4AA00CF91E04995800DFBC1E /* idea.h in Headers */,
+				4AA00D511E049D4000DFBC1E /* config.h in Headers */,
+				4AA00D0B1E04995800DFBC1E /* objects.h in Headers */,
+				4AA00CED1E04995800DFBC1E /* ecdh.h in Headers */,
+				4AA00CEF1E04995800DFBC1E /* ecdsa.h in Headers */,
+				4AA00CBB1E04995700DFBC1E /* aes.h in Headers */,
+				4AA00D0F1E04995800DFBC1E /* opensslconf.h in Headers */,
+				4AA00D231E04995800DFBC1E /* rc5.h in Headers */,
+				4AA00D251E04995800DFBC1E /* ripemd.h in Headers */,
+				4AA00D411E04995800DFBC1E /* txt_db.h in Headers */,
 				BCDA320B150F400900338916 /* oauth.h in Headers */,
+				4AA00CEB1E04995800DFBC1E /* ec.h in Headers */,
+				4AA00CD31E04995700DFBC1E /* cms.h in Headers */,
 				BCDA320F150F400900338916 /* xmalloc.h in Headers */,
+				4AA00CDD1E04995800DFBC1E /* ct.h in Headers */,
+				4AA00CD91E04995700DFBC1E /* conf_api.h in Headers */,
+				4AA00D351E04995800DFBC1E /* ssl2.h in Headers */,
+				4AA00D3F1E04995800DFBC1E /* ts.h in Headers */,
+				4AA00CC71E04995700DFBC1E /* blowfish.h in Headers */,
+				4AA00D311E04995800DFBC1E /* srtp.h in Headers */,
+				4AA00CF11E04995800DFBC1E /* engine.h in Headers */,
+				4AA00CFD1E04995800DFBC1E /* lhash.h in Headers */,
+				4AA00CF31E04995800DFBC1E /* err.h in Headers */,
+				4AA00CBD1E04995700DFBC1E /* asn1.h in Headers */,
+				4AA00D011E04995800DFBC1E /* md4.h in Headers */,
+				4AA00CF71E04995800DFBC1E /* hmac.h in Headers */,
+				4AA00D451E04995800DFBC1E /* whrlpool.h in Headers */,
+				4AA00CCB1E04995700DFBC1E /* buffer.h in Headers */,
+				4AA00CD51E04995700DFBC1E /* comp.h in Headers */,
+				4AA00CDF1E04995800DFBC1E /* des.h in Headers */,
+				4AA00D131E04995800DFBC1E /* ossl_typ.h in Headers */,
+				4AA00CFF1E04995800DFBC1E /* md2.h in Headers */,
+				4AA00CE11E04995800DFBC1E /* dh.h in Headers */,
+				4AA00D2F1E04995800DFBC1E /* srp.h in Headers */,
+				4AA00D171E04995800DFBC1E /* pem2.h in Headers */,
+				4AA00D071E04995800DFBC1E /* modes.h in Headers */,
+				4AA00D1F1E04995800DFBC1E /* rc2.h in Headers */,
+				4AA00CCD1E04995700DFBC1E /* camellia.h in Headers */,
+				4AA00D291E04995800DFBC1E /* safestack.h in Headers */,
+				4AA00D4B1E04995800DFBC1E /* x509v3.h in Headers */,
+				4AA00D2B1E04995800DFBC1E /* seed.h in Headers */,
+				4AA00CDB1E04995800DFBC1E /* crypto.h in Headers */,
+				4AA00CC51E04995700DFBC1E /* bio.h in Headers */,
+				4AA00D491E04995800DFBC1E /* x509_vfy.h in Headers */,
+				4AA00CE51E04995800DFBC1E /* dtls1.h in Headers */,
+				4AA00D191E04995800DFBC1E /* pkcs12.h in Headers */,
+				4AA00CBF1E04995700DFBC1E /* asn1_mac.h in Headers */,
+				4AA00D3B1E04995800DFBC1E /* symhacks.h in Headers */,
+				4AA00CFB1E04995800DFBC1E /* kdf.h in Headers */,
+				4AA00D151E04995800DFBC1E /* pem.h in Headers */,
+				4AA00D331E04995800DFBC1E /* ssl.h in Headers */,
+				4AA00D091E04995800DFBC1E /* obj_mac.h in Headers */,
+				4AA00CC31E04995700DFBC1E /* async.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4AA00C2C1E048D7200DFBC1E /* OAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00C301E048D7200DFBC1E /* Build configuration list for PBXNativeTarget "OAuth" */;
+			buildPhases = (
+				4AA00C291E048D7200DFBC1E /* Sources */,
+				4AA00C2A1E048D7200DFBC1E /* Frameworks */,
+				4AA00C2B1E048D7200DFBC1E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OAuth;
+			productName = OAuth;
+			productReference = 4AA00C2D1E048D7200DFBC1E /* libOAuth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4AA00D7C1E04AB8000DFBC1E /* selftest_wiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00D811E04AB8000DFBC1E /* Build configuration list for PBXNativeTarget "selftest_wiki" */;
+			buildPhases = (
+				4AA00D791E04AB8000DFBC1E /* Sources */,
+				4AA00D7A1E04AB8000DFBC1E /* Frameworks */,
+				4AA00D7B1E04AB8000DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = selftest_wiki;
+			productName = selftest_wiki;
+			productReference = 4AA00D7D1E04AB8000DFBC1E /* selftest_wiki */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00D8D1E04AC3100DFBC1E /* selftest_eran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00D921E04AC3200DFBC1E /* Build configuration list for PBXNativeTarget "selftest_eran" */;
+			buildPhases = (
+				4AA00D8A1E04AC3100DFBC1E /* Sources */,
+				4AA00D8B1E04AC3100DFBC1E /* Frameworks */,
+				4AA00D8C1E04AC3100DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = selftest_eran;
+			productName = selftest_eran;
+			productReference = 4AA00D8E1E04AC3100DFBC1E /* selftest_eran */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00DA01E04AD4200DFBC1E /* selftest_other */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00DA51E04AD4200DFBC1E /* Build configuration list for PBXNativeTarget "selftest_other" */;
+			buildPhases = (
+				4AA00D9D1E04AD4200DFBC1E /* Sources */,
+				4AA00D9E1E04AD4200DFBC1E /* Frameworks */,
+				4AA00D9F1E04AD4200DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = selftest_other;
+			productName = selftest_other;
+			productReference = 4AA00DA11E04AD4200DFBC1E /* selftest_other */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00DAF1E04AE0A00DFBC1E /* oauth_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00DB91E04AE0A00DFBC1E /* Build configuration list for PBXNativeTarget "oauth_test" */;
+			buildPhases = (
+				4AA00DB01E04AE0A00DFBC1E /* Sources */,
+				4AA00DB31E04AE0A00DFBC1E /* Frameworks */,
+				4AA00DB81E04AE0A00DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oauth_test;
+			productName = selftest_other;
+			productReference = 4AA00DBC1E04AE0A00DFBC1E /* oauth_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00DC01E04B06800DFBC1E /* oauth_test2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00DC91E04B06800DFBC1E /* Build configuration list for PBXNativeTarget "oauth_test2" */;
+			buildPhases = (
+				4AA00DC11E04B06800DFBC1E /* Sources */,
+				4AA00DC31E04B06800DFBC1E /* Frameworks */,
+				4AA00DC81E04B06800DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oauth_test2;
+			productName = selftest_other;
+			productReference = 4AA00DCC1E04B06800DFBC1E /* oauth_test2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00DD01E04B11E00DFBC1E /* oauth_bodyhash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00DD91E04B11E00DFBC1E /* Build configuration list for PBXNativeTarget "oauth_bodyhash" */;
+			buildPhases = (
+				4AA00DD11E04B11E00DFBC1E /* Sources */,
+				4AA00DD31E04B11E00DFBC1E /* Frameworks */,
+				4AA00DD81E04B11E00DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oauth_bodyhash;
+			productName = selftest_other;
+			productReference = 4AA00DDC1E04B11E00DFBC1E /* oauth_bodyhash */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00DE01E04B1A800DFBC1E /* oauth_datapost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00DE91E04B1A800DFBC1E /* Build configuration list for PBXNativeTarget "oauth_datapost" */;
+			buildPhases = (
+				4AA00DE11E04B1A800DFBC1E /* Sources */,
+				4AA00DE31E04B1A800DFBC1E /* Frameworks */,
+				4AA00DE81E04B1A800DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oauth_datapost;
+			productName = selftest_other;
+			productReference = 4AA00DEC1E04B1A800DFBC1E /* oauth_datapost */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00DF01E04B20800DFBC1E /* oauth_example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00DF91E04B20800DFBC1E /* Build configuration list for PBXNativeTarget "oauth_example" */;
+			buildPhases = (
+				4AA00DF11E04B20800DFBC1E /* Sources */,
+				4AA00DF31E04B20800DFBC1E /* Frameworks */,
+				4AA00DF81E04B20800DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oauth_example;
+			productName = selftest_other;
+			productReference = 4AA00DFC1E04B20800DFBC1E /* oauth_example */;
+			productType = "com.apple.product-type.tool";
+		};
+		4AA00E001E04B27100DFBC1E /* oauth_sign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA00E091E04B27100DFBC1E /* Build configuration list for PBXNativeTarget "oauth_sign" */;
+			buildPhases = (
+				4AA00E011E04B27100DFBC1E /* Sources */,
+				4AA00E031E04B27100DFBC1E /* Frameworks */,
+				4AA00E081E04B27100DFBC1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oauth_sign;
+			productName = selftest_other;
+			productReference = 4AA00E0C1E04B27100DFBC1E /* oauth_sign */;
+			productType = "com.apple.product-type.tool";
+		};
 		BCDA31F0150F3DD300338916 /* liboauth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCDA31FE150F3DD300338916 /* Build configuration list for PBXNativeTarget "liboauth" */;
@@ -119,6 +1155,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					4AA00C2C1E048D7200DFBC1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					4AA00D7C1E04AB8000DFBC1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					4AA00D8D1E04AC3100DFBC1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					4AA00DA01E04AD4200DFBC1E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = BCDA31E6150F3D6900338916 /* Build configuration list for PBXProject "liboauth" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -128,16 +1182,113 @@
 				en,
 			);
 			mainGroup = BCDA31E1150F3D6900338916;
-			productRefGroup = BCDA31F2150F3DD300338916 /* Products */;
+			productRefGroup = BCDA31F2150F3DD300338916 /* Create Libraries */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BCDA31F0150F3DD300338916 /* liboauth */,
+				4AA00C2C1E048D7200DFBC1E /* OAuth */,
+				4AA00D7C1E04AB8000DFBC1E /* selftest_wiki */,
+				4AA00D8D1E04AC3100DFBC1E /* selftest_eran */,
+				4AA00DA01E04AD4200DFBC1E /* selftest_other */,
+				4AA00DAF1E04AE0A00DFBC1E /* oauth_test */,
+				4AA00DC01E04B06800DFBC1E /* oauth_test2 */,
+				4AA00DD01E04B11E00DFBC1E /* oauth_bodyhash */,
+				4AA00DE01E04B1A800DFBC1E /* oauth_datapost */,
+				4AA00DF01E04B20800DFBC1E /* oauth_example */,
+				4AA00E001E04B27100DFBC1E /* oauth_sign */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4AA00C291E048D7200DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00C371E048DE800DFBC1E /* xmalloc.c in Sources */,
+				4AA00C361E048DE800DFBC1E /* sha1.c in Sources */,
+				4AA00C321E048DE800DFBC1E /* hash.c in Sources */,
+				4AA00C351E048DE800DFBC1E /* oauth_http.c in Sources */,
+				4AA00C331E048DE800DFBC1E /* oauth.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00D791E04AB8000DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00D841E04AB9E00DFBC1E /* selftest_wiki.c in Sources */,
+				4AA00D851E04ABA100DFBC1E /* commontest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00D8A1E04AC3100DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00D951E04AC4A00DFBC1E /* commontest.c in Sources */,
+				4AA00D9B1E04AC6F00DFBC1E /* selftest_eran.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00D9D1E04AD4200DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DAA1E04AD6700DFBC1E /* commontest.c in Sources */,
+				4AA00DA91E04AD5900DFBC1E /* selftest_other.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DB01E04AE0A00DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DBF1E04AF3000DFBC1E /* oauthtest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DC11E04B06800DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DCF1E04B09C00DFBC1E /* oauthtest2.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DD11E04B11E00DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DDE1E04B15000DFBC1E /* oauthbodyhash.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DE11E04B1A800DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DEE1E04B1C100DFBC1E /* oauthdatapost.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00DF11E04B20800DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00DFE1E04B21D00DFBC1E /* oauthexample.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA00E011E04B27100DFBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA00E0E1E04B28400DFBC1E /* oauthsign.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDA31ED150F3DD300338916 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +1304,674 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4AA00C2E1E048D7200DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenSSL1.1/include\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/OpenSSL1.1/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00C2F1E048D7200DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenSSL1.1/include\"";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/OpenSSL1.1/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00D821E04AB8000DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00D831E04AB8000DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00D931E04AC3200DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00D941E04AC3200DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00DA61E04AD4200DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00DA71E04AD4200DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00DBA1E04AE0A00DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00DBB1E04AE0A00DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00DCA1E04B06800DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00DCB1E04B06800DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00DDA1E04B11E00DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00DDB1E04B11E00DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00DEA1E04B1A800DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00DEB1E04B1A800DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00DFA1E04B20800DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00DFB1E04B20800DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4AA00E0A1E04B27100DFBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AA00E0B1E04B27100DFBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/liboauth/Build/Products/Release/usr/local/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSSL1.1/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		BCDA31E8150F3D6A00338916 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -174,7 +1993,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenSSL1.1/include\"";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -200,7 +2020,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenSSL1.1/include\"";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -231,7 +2052,10 @@
 					"$(PROJECT_DIR)/OpenSSL1.1/lib",
 				);
 				OPENSSL_DIR = "$(SRCROOT)/../openssl";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = oauth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -257,7 +2081,10 @@
 					"$(PROJECT_DIR)/OpenSSL1.1/lib",
 				);
 				OPENSSL_DIR = "$(SRCROOT)/../openssl";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = oauth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -268,6 +2095,93 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4AA00C301E048D7200DFBC1E /* Build configuration list for PBXNativeTarget "OAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00C2E1E048D7200DFBC1E /* Debug */,
+				4AA00C2F1E048D7200DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA00D811E04AB8000DFBC1E /* Build configuration list for PBXNativeTarget "selftest_wiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00D821E04AB8000DFBC1E /* Debug */,
+				4AA00D831E04AB8000DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4AA00D921E04AC3200DFBC1E /* Build configuration list for PBXNativeTarget "selftest_eran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00D931E04AC3200DFBC1E /* Debug */,
+				4AA00D941E04AC3200DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4AA00DA51E04AD4200DFBC1E /* Build configuration list for PBXNativeTarget "selftest_other" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00DA61E04AD4200DFBC1E /* Debug */,
+				4AA00DA71E04AD4200DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4AA00DB91E04AE0A00DFBC1E /* Build configuration list for PBXNativeTarget "oauth_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00DBA1E04AE0A00DFBC1E /* Debug */,
+				4AA00DBB1E04AE0A00DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA00DC91E04B06800DFBC1E /* Build configuration list for PBXNativeTarget "oauth_test2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00DCA1E04B06800DFBC1E /* Debug */,
+				4AA00DCB1E04B06800DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA00DD91E04B11E00DFBC1E /* Build configuration list for PBXNativeTarget "oauth_bodyhash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00DDA1E04B11E00DFBC1E /* Debug */,
+				4AA00DDB1E04B11E00DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA00DE91E04B1A800DFBC1E /* Build configuration list for PBXNativeTarget "oauth_datapost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00DEA1E04B1A800DFBC1E /* Debug */,
+				4AA00DEB1E04B1A800DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA00DF91E04B20800DFBC1E /* Build configuration list for PBXNativeTarget "oauth_example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00DFA1E04B20800DFBC1E /* Debug */,
+				4AA00DFB1E04B20800DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA00E091E04B27100DFBC1E /* Build configuration list for PBXNativeTarget "oauth_sign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA00E0A1E04B27100DFBC1E /* Debug */,
+				4AA00E0B1E04B27100DFBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BCDA31E6150F3D6900338916 /* Build configuration list for PBXProject "liboauth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

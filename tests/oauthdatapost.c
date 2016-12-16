@@ -41,10 +41,10 @@
  * This is an experimental extension.
  */
 int oauth_image_post(char *filename, char *url) {
-  const char *c_key         = "key"; //< consumer key
-  const char *c_secret      = "secret"; //< consumer secret
-  char *t_key               = NULL; //< access token key
-  char *t_secret            = NULL; //< access token secret
+  const char *c_key         = "key"; ///< consumer key
+  const char *c_secret      = "secret"; ///< consumer secret
+  char *t_key               = NULL; ///< access token key
+  char *t_secret            = NULL; ///< access token secret
 
   char *postarg = NULL;
   char *req_url = NULL;
@@ -59,8 +59,8 @@ int oauth_image_post(char *filename, char *url) {
   char *sig_url;
 
   // get acces token - see oautexample.c
-  t_key    = strdup("key"); //< access token key
-  t_secret = strdup("secret"); //< access token secret
+  t_key    = strdup("key"); ///< access token key
+  t_secret = strdup("secret"); ///< access token secret
 
   // read raw data to sign and send from file.
   F= fopen(filename, "r");

@@ -43,11 +43,11 @@ void request_token_example_get(void) {
   const char *req_c_secret      = "942295b08ffce77b399419ee96ac65be"; //< consumer secret
 #else
   const char *request_token_uri = "http://term.ie/oauth/example/request_token.php";
-  const char *req_c_key         = "key"; //< consumer key
-  const char *req_c_secret      = "secret"; //< consumer secret
+  const char *req_c_key         = "key"; ///< consumer key
+  const char *req_c_secret      = "secret"; ///< consumer secret
 #endif
-  char *res_t_key    = NULL; //< replied key
-  char *res_t_secret = NULL; //< replied secret
+  char *res_t_key    = NULL; ///< replied key
+  char *res_t_secret = NULL; ///< replied secret
 
   char *req_url = NULL;
   char *req_hdr = NULL;
@@ -69,9 +69,9 @@ void request_token_example_get(void) {
   }
 
   oauth_sign_array2_process(&argc, &argv,
-          NULL, //< postargs (unused)
+          NULL, ///< postargs (unused)
           OA_HMAC,
-          NULL, //< HTTP method (defaults to "GET")
+          NULL, ///< HTTP method (defaults to "GET")
           req_c_key, req_c_secret, NULL, NULL);
 
   // 'default' oauth_sign_url2 would do:
